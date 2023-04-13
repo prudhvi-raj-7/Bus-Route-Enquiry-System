@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	padding: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input[type="text"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+form button {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#bus-routes {
+	margin-top: 20px;
+}
+
+#routes-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#routes-list li {
+	padding: 10px;
+	background-color: #eee;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.login-form {
+	margin: 50px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	width: 300px;
+	text-align: center;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+    </style>
+<head>
+	<title>Bus Route Enquiry System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Bus Route Enquiry System</h1>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Routes</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+			<a href="login.html">Login</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Bus Route Enquiry System</h2>
+		<form id="search-form">
+			<label for="source">Source:</label>
+			<input type="text" id="source" name="source" required>
+			<label for="destination">Destination:</label>
+			<input type="text" id="destination" name="destination" required>
+			<button type="submit">Search</button>
+		</form>
+		<div id="bus-routes">
+			<h3>Bus Routes:</h3>
+			<ul id="routes-list">
+				<li>Route 1</li>
+				<li>Route 2</li>
+				<li>Route 3</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 Bus Route Enquiry System. All rights reserved.</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+</html>
